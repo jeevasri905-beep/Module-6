@@ -29,7 +29,30 @@ To create an **abstract class** named `Shape` with an **abstract method** `calcu
 ---
 
 ## 💻 Program
+```
+from abc import ABC
+class type_shape(ABC):
+   def area(self):
+      pass
 
+class Rectangle(type_shape):
+   length = 6
+   breadth = 4
+   def area(self):
+      return self.length * self.breadth
+
+class Circle(type_shape):
+   radius = 7
+   def area(self):
+      return 3.14*self.radius**2
+
+r = Rectangle()
+c = Circle()
+print("Area of a rectangle:", r.area())
+print("Area of a circle:", c.area())
+```
 ## Output
+<img width="408" height="225" alt="image" src="https://github.com/user-attachments/assets/35734946-e832-49a8-b222-66bb0b28f065" />
 
 ## Result
+Thus, the program is executed successfully.
